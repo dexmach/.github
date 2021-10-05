@@ -28,7 +28,7 @@ jobs:
         $readme.replace('{{ OPENSOURCE }}', $ossOutput)
         $readme.replace('{{ ARCHIVED }}', $aiwOutput)
 
-        Set-Content -Path /profile/README.md -Value $readme -Force
+        Set-Content -Path ./profile/README.md -Value $readme -Force
     - name: Commit profile README.MD
       run : |
           git config user.name github-actions
