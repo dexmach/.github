@@ -16,12 +16,12 @@ Have a look at the repo's we are currently focussing on:
 
 ### Open Source at DexMach
 
-{{ OPENSOURCE }}
+
 
 ### Immersion workshops
 
-{{ AIW }}
+
 
 ### Archived
 
-{{ ARCHIVED }}
+
