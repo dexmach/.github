@@ -15,7 +15,7 @@ jobs:
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        $repos = gh repo list --public --json isArchived,name,repositoryTopics,url
+        $repos = gh repo list Dexmach--public --json isArchived,name,repositoryTopics,url
         $repoList = $repos | ConvertFrom-Json
         $archivedRepos = $repoList.where({$_.IsArchived -eq $true})
         $aiwRepos = $repoList.where({($_.RepositoryTopics.name -eq 'aiw') -and ($_.IsArchived -eq $false)})
