@@ -12,6 +12,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: retrieve repositories
       shell: pwsh
+      env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         $repos = gh repo list --public --json isArchived,name,repositoryTopics,url
         $repoList = $repos | ConvertFrom-Json
