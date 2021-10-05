@@ -1,0 +1,40 @@
+name: profile automation
+on:
+  push:
+  schedule:
+    - cron:  '0 4 * * 1-6'
+  workflow_dispatch:
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: retrieve repositories
+      shell: pwsh
+      run: |
+        $repos = gh repo list --public --json isArchived,name,repositoryTopics
+        $repoList = $repos | ConvertFrom-Json
+        $archivedRepos = $repoList.where({$_.IsArchived -eq $true})
+        $aiwRepos = $repoList.where({($_.RepositoryTopics.name -eq 'aiw') -and ($_.IsArchived -eq $false)})
+        $ossRepos = $repoList.where({($_.RepositoryTopics.name -eq 'oss') -and ($_.IsArchived -eq $false)})
+        $aiwcontent = 
+        $readme = get-content 'README.md'
+        
+        $aiwOutput = foreach ($repo in $aiwRepos){$aiwOutput+= "- [{0}]({1})`r`n" -f $repo.Name, $repo.url }
+        $ossOutput = foreach ($repo in $ossRepos){$ossOutput+= "- [{0}]({1})`r`n" -f $repo.Name, $repo.url }
+        $archivedOutput = foreach ($repo in $archivedRepos){$archivedOutput+= "- [{0}]({1})`r`n" -f $repo.Name, $repo.url }
+        $readme.replace('{{ AIW }}', $archivedOutput)
+        $readme.replace('{{ OPENSOURCE }}', $ossOutput)
+        $readme.replace('{{ ARCHIVED }}', $aiwOutput)
+
+        Set-Content -Path README.MD -Value $readme -Force
+    - name: Commit README.MD
+      run : |
+          git config user.name github-actions
+            git config user.email github-actions@github.com
+            git add .
+            git commit --allow-empty -m "update list of repos"
+            git push
+
+
