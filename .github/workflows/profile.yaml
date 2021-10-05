@@ -28,7 +28,7 @@ jobs:
         $readme = $readme.replace('{{ AIW }}', $aiwOutput)
         $readme = $readme.replace('{{ OPENSOURCE }}', $ossOutput)
         $readme = $readme.replace('{{ ARCHIVED }}', $archivedOutput)
-
+        $readme
         Set-Content -Path ./profile/README.md -Value $readme -Force
     - name: Commit profile README.MD
       run : |
