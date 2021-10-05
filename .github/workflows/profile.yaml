@@ -13,6 +13,7 @@ jobs:
     - name: retrieve repositories
       shell: pwsh
       run: |
+        gh auth login --with-token < ${{ secrets.GITHUB_TOKEN }}
         $repos = gh repo list Dexmach --public --json isArchived,name,repositoryTopics,url
         $repoList = $repos | ConvertFrom-Json
         $archivedRepos = $repoList.where({$_.IsArchived -eq $true})
