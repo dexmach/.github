@@ -13,20 +13,19 @@ jobs:
     - name: retrieve repositories
       shell: pwsh
       run: |
-        $repos = gh repo list --public --json isArchived,name,repositoryTopics
+        $repos = gh repo list Dexmach --public --json isArchived,name,repositoryTopics,url
         $repoList = $repos | ConvertFrom-Json
         $archivedRepos = $repoList.where({$_.IsArchived -eq $true})
         $aiwRepos = $repoList.where({($_.RepositoryTopics.name -eq 'aiw') -and ($_.IsArchived -eq $false)})
         $ossRepos = $repoList.where({($_.RepositoryTopics.name -eq 'oss') -and ($_.IsArchived -eq $false)})
-        $aiwcontent = 
         $readme = get-content ./profile/README.md
         
-        $aiwOutput = foreach ($repo in $aiwRepos){$aiwOutput+= "- [{0}]({1})`r`n" -f $repo.Name, $repo.url }
-        $ossOutput = foreach ($repo in $ossRepos){$ossOutput+= "- [{0}]({1})`r`n" -f $repo.Name, $repo.url }
-        $archivedOutput = foreach ($repo in $archivedRepos){$archivedOutput+= "- [{0}]({1})`r`n" -f $repo.Name, $repo.url }
-        $readme.replace('{{ AIW }}', $archivedOutput)
-        $readme.replace('{{ OPENSOURCE }}', $ossOutput)
-        $readme.replace('{{ ARCHIVED }}', $aiwOutput)
+        foreach ($repo in $aiwRepos){$aiwOutput+= "- [{0}]({1})`r`n" -f $repo.Name, $repo.url }
+        foreach ($repo in $ossRepos){$ossOutput+= "- [{0}]({1})`r`n" -f $repo.Name, $repo.url }
+        foreach ($repo in $archivedRepos){$archivedOutput+= "- [{0}]({1})`r`n" -f $repo.Name, $repo.url }
+        $readme = $readme.replace('{{ AIW }}', $aiwOutput)
+        $readme = $readme.replace('{{ OPENSOURCE }}', $ossOutput)
+        $readme = $readme.replace('{{ ARCHIVED }}', $archivedOutput)
 
         Set-Content -Path ./profile/README.md -Value $readme -Force
     - name: Commit profile README.MD
