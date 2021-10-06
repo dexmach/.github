@@ -5,7 +5,7 @@
 </p>
 
 At Dexmach we have the purpose to evangelize our vision and cloud strategy to organizations. 
-We have a **deep passion** 🤟 for **Microsoft cloud technologies** with an **atypical mindset**.
+We have a **deep passion** for **Microsoft cloud technologies** with an **atypical mindset**.
 
 
 We believe in our clients and our [Dexmach #oneteam](https://dexmach.com) approach. 
