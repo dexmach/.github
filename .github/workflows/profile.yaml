@@ -31,6 +31,8 @@ jobs:
         
         $aiwPattern = "(?s)<!-- AIW START -->\n(.*?)\n<!-- AIW END -->"
         $aiwResult = [regex]::match($readme,$aiwpattern).Groups[1].Value
+        $aiwResult
+        $aiwOutput
         if(![string]::IsNullOrEmpty($aiwOutput)){
           $readme = $readme.replace($aiwResult, $aiwOutput.replace('$', '$$'))
         }
