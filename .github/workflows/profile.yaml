@@ -16,7 +16,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         $repos = gh repo list Dexmach --public --json isArchived,name,repositoryTopics,url
-        $repoList = $repos | ConvertFrom-Json
+        $repoList = ($repos | ConvertFrom-Json) | Sort-Object -property name
         $archivedRepos = $repoList.where({$_.IsArchived -eq $true})
         $aiwRepos = $repoList.where({($_.RepositoryTopics.name -eq 'aiw') -and ($_.IsArchived -eq $false)})
         $ossRepos = $repoList.where({($_.RepositoryTopics.name -eq 'oss') -and ($_.IsArchived -eq $false)})
@@ -32,16 +32,17 @@ jobs:
         $aiwPattern = "(?s)<!-- AIW START -->\n(.*?)\n<!-- AIW END -->"
         $aiwResult = [regex]::match($readme,$aiwpattern).Groups[1].Value
 
-        if(![string]::IsNullOrEmpty($aiwOutput)){
+        if(![string]::IsNullOrEmpty($aiwOutput.trim())){
+          $aiwOutput = $aiwOutput
           $readme = $readme.replace($aiwResult, $aiwOutput.replace('$', '$$'))
         }
         $ossPattern = "(?s)<!-- OSS START -->\n(.*?)\n<!-- OSS END -->"
         $ossResult = [regex]::match($readme,$ossPattern).Groups[1].Value
-        if(![string]::IsNullOrEmpty($ossOutput)){
+        if(![string]::IsNullOrEmpty($ossOutput.trim())){
           $readme = $readme.replace($ossResult, $ossOutput.replace('$', '$$'))
         }
         $archivePattern = "(?s)<!-- ARCHIVE START -->\n(.*?)\n<!-- ARCHIVE END -->"
-        $archiveResult = [regex]::match($readme,$archivepattern).Groups[1].Value
+        $archiveResult = [regex]::match($readme,$archivepattern.trim()).Groups[1].Value
         if(![string]::IsNullOrEmpty($archiveOutput)){
           $readme = $readme.replace($archiveResult, $archiveOutput.replace('$', '$$'))
         }
