@@ -26,8 +26,8 @@ jobs:
         $ossOutput = "`r`n"
         $archiveOutput = "`r`n"
         foreach ($repo in $aiwRepos){$aiwOutput+= "- `[{0}`]({1}) `r`n" -f $repo.Name, $repo.url }
-        foreach ($repo in $ossRepos){$ossOutput+= "- [{0}]({1}) `r`n' -f $repo.Name, $repo.url }
-        foreach ($repo in $archivedRepos){$archiveOutput+= '- [{0}]({1}) `r`n' -f $repo.Name, $repo.url }
+        foreach ($repo in $ossRepos){$ossOutput+= "- [{0}]({1}) `r`n" -f $repo.Name, $repo.url }
+        foreach ($repo in $archivedRepos){$archiveOutput+= "- [{0}]({1}) `r`n" -f $repo.Name, $repo.url }
         
         $aiwPattern = "(?s)<!-- AIW START -->\n(.*?)\n<!-- AIW END -->"
         $aiwResult = [regex]::match($readme,$aiwpattern).Groups[1].Value
