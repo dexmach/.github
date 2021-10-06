@@ -20,7 +20,7 @@ Have a look at the repo's we are currently focussing on:
 
 <!-- OSS START -->
 
-No public OSS repositories to list 😞
+No public OSS repositories to list yet 😞
 
 <!-- OSS END -->
 
