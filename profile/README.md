@@ -27,7 +27,6 @@ Have a look at the repo's we are currently focussing on:
 
 <!-- AIW START -->
 
- No public Immersion repositories to list
 
 <!-- AIW END -->
 
@@ -43,6 +42,7 @@ Have a look at the repo's we are currently focussing on:
 - [DemoProject](https://github.com/dexmach/DemoProject) 
 
 <!-- ARCHIVE END -->
+
 
 
 
