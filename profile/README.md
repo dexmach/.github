@@ -19,7 +19,7 @@ Have a look at the repo's we are currently focussing on:
 
 <!-- OSS START -->
 
- No public open source repositories to list
+ No public open source repositories to list :-(
  
 <!-- OSS END -->
 
@@ -27,6 +27,7 @@ Have a look at the repo's we are currently focussing on:
 
 <!-- AIW START -->
 
+No public Azure Immersion repositories to list :-(
 
 <!-- AIW END -->
 
