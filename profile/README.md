@@ -16,12 +16,20 @@ Have a look at the repo's we are currently focussing on:
 
 ### Open Source at DexMach
 
-
-
+<!-- OSS START -->
+ No public open source repositories to list
+<!-- OSS END -->
 ### Immersion workshops
 
-
+<!-- AIW START -->
+ No public Azure immersion repositories to list
+<!-- AIW END -->
 
 ### Archived
 
+<!-- ARCHIVE START -->
+
+No public archived repositories to list
+
+<!-- ARCHIVE END -->
 
