@@ -27,7 +27,6 @@ Have a look at the repo's we are currently focussing on:
 
 <!-- AIW START -->
 
- No public immersion repositories to list
 
 <!-- AIW END -->
 
@@ -35,8 +34,15 @@ Have a look at the repo's we are currently focussing on:
 
 <!-- ARCHIVE START -->
 
-- [VMRoles](https://github.com/dexmach/VMRoles)`r`n- [SMBblueprint-Docs](https://github.com/dexmach/SMBblueprint-Docs)`r`n- [SMBblueprint-PowerShell](https://github.com/dexmach/SMBblueprint-PowerShell)`r`n- [SMBblueprint-ARM](https://github.com/dexmach/SMBblueprint-ARM)`r`n- [WAPTenantPublicAPI](https://github.com/dexmach/WAPTenantPublicAPI)`r`n- [DemoProject](https://github.com/dexmach/DemoProject)`r`n
+- [VMRoles](https://github.com/dexmach/VMRoles) 
+- [SMBblueprint-Docs](https://github.com/dexmach/SMBblueprint-Docs) 
+- [SMBblueprint-PowerShell](https://github.com/dexmach/SMBblueprint-PowerShell) 
+- [SMBblueprint-ARM](https://github.com/dexmach/SMBblueprint-ARM) 
+- [WAPTenantPublicAPI](https://github.com/dexmach/WAPTenantPublicAPI) 
+- [DemoProject](https://github.com/dexmach/DemoProject) 
+
 <!-- ARCHIVE END -->
+
 
 
 
