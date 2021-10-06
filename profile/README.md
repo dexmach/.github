@@ -36,14 +36,15 @@ No public OSS repositories to list :-(
 
 <!-- ARCHIVE START -->
 
-- [VMRoles](https://github.com/dexmach/VMRoles) 
+- [DemoProject](https://github.com/dexmach/DemoProject) 
+- [SMBblueprint-ARM](https://github.com/dexmach/SMBblueprint-ARM) 
 - [SMBblueprint-Docs](https://github.com/dexmach/SMBblueprint-Docs) 
 - [SMBblueprint-PowerShell](https://github.com/dexmach/SMBblueprint-PowerShell) 
-- [SMBblueprint-ARM](https://github.com/dexmach/SMBblueprint-ARM) 
+- [VMRoles](https://github.com/dexmach/VMRoles) 
 - [WAPTenantPublicAPI](https://github.com/dexmach/WAPTenantPublicAPI) 
-- [DemoProject](https://github.com/dexmach/DemoProject) 
 
 <!-- ARCHIVE END -->
+
 
 
 
