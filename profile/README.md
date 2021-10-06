@@ -27,17 +27,16 @@ Have a look at the repo's we are currently focussing on:
 
 <!-- AIW START -->
 
- No public Azure immersion repositories to list
- 
+
 <!-- AIW END -->
 
 ### Archived
 
 <!-- ARCHIVE START -->
 
-No public archived repositories to list
-
+- [VMRoles](https://github.com/dexmach/VMRoles)`r`n- [SMBblueprint-Docs](https://github.com/dexmach/SMBblueprint-Docs)`r`n- [SMBblueprint-PowerShell](https://github.com/dexmach/SMBblueprint-PowerShell)`r`n- [SMBblueprint-ARM](https://github.com/dexmach/SMBblueprint-ARM)`r`n- [WAPTenantPublicAPI](https://github.com/dexmach/WAPTenantPublicAPI)`r`n- [DemoProject](https://github.com/dexmach/DemoProject)`r`n
 <!-- ARCHIVE END -->
+
 
 
 
