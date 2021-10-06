@@ -20,15 +20,28 @@ jobs:
         $archivedRepos = $repoList.where({$_.IsArchived -eq $true})
         $aiwRepos = $repoList.where({($_.RepositoryTopics.name -eq 'aiw') -and ($_.IsArchived -eq $false)})
         $ossRepos = $repoList.where({($_.RepositoryTopics.name -eq 'oss') -and ($_.IsArchived -eq $false)})
-        $readme = get-content ./profile/README.md
+        $readme = get-content ./profile/README.md -raw
         
         foreach ($repo in $aiwRepos){$aiwOutput+= "- [{0}]({1})`r`n" -f $repo.Name, $repo.url }
         foreach ($repo in $ossRepos){$ossOutput+= "- [{0}]({1})`r`n" -f $repo.Name, $repo.url }
-        foreach ($repo in $archivedRepos){$archivedOutput+= "- [{0}]({1})`r`n" -f $repo.Name, $repo.url }
-        $readme = $readme.replace('{{ AIW }}', $aiwOutput)
-        $readme = $readme.replace('{{ OPENSOURCE }}', $ossOutput)
-        $readme = $readme.replace('{{ ARCHIVED }}', $archivedOutput)
-        $readme
+        foreach ($repo in $archivedRepos){$archiveOutput+= "- [{0}]({1})`r`n" -f $repo.Name, $repo.url }
+        
+        $aiwPattern = "(?s)<!-- AIW START -->\n(.*?)\n<!-- AIW END -->"
+        $aiwResult = [regex]::match($readme,$aiwpattern).Groups[1].Value
+        if(![string]::IsNullOrEmpty($aiwOutput)){
+          $readme = $readme.replace($aiwResult, $aiwOutput.replace('$', '$$'))
+        }
+        $ossPattern = "(?s)<!-- OSS START -->\n(.*?)\n<!-- OSS END -->"
+        $ossResult = [regex]::match($readme,$aiwpattern).Groups[1].Value
+        if(![string]::IsNullOrEmpty($ossOutput)){
+          $readme = $readme.replace($ossResult, $ossOutput.replace('$', '$$'))
+        }
+        $archivePattern = "(?s)<!-- ARCHIVE START -->\n(.*?)\n<!-- ARCHIVE END -->"
+        $archiveResult = [regex]::match($readme,$archivepattern).Groups[1].Value
+        if(![string]::IsNullOrEmpty($archiveOutput)){
+          $readme = $readme.replace($archiveResult, $archiveOutput.replace('$', '$$'))
+        }
+
         Set-Content -Path ./profile/README.md -Value $readme -Force
     - name: Commit profile README.MD
       run : |
