@@ -19,15 +19,15 @@ Have a look at the repo's we are currently focussing on:
 
 <!-- OSS START -->
 
- No public open source repositories to list :-(
- 
+
 <!-- OSS END -->
 
 ### Immersion workshops
 
 <!-- AIW START -->
 
-No public Azure Immersion repositories to list :-(
+- [AIW-WVD-Immersion](https://github.com/dexmach/AIW-WVD-Immersion) 
+- [cloudnativelabs](https://github.com/dexmach/cloudnativelabs) 
 
 <!-- AIW END -->
 
@@ -43,6 +43,7 @@ No public Azure Immersion repositories to list :-(
 - [DemoProject](https://github.com/dexmach/DemoProject) 
 
 <!-- ARCHIVE END -->
+
 
 
 
