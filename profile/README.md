@@ -28,7 +28,9 @@ No public OSS repositories to list yet 😉
 
 <!-- AIW START -->
 
+- [AIW-Hybrid-cloud-solutions](https://github.com/dexmach/AIW-Hybrid-cloud-solutions) 
 - [AIW-WVD-Immersion](https://github.com/dexmach/AIW-WVD-Immersion) 
+- [AVW-Cloud-Adoption-Framework](https://github.com/dexmach/AVW-Cloud-Adoption-Framework) 
 - [cloudnativelabs](https://github.com/dexmach/cloudnativelabs) 
 
 <!-- AIW END -->
@@ -45,6 +47,7 @@ No public OSS repositories to list yet 😉
 - [WAPTenantPublicAPI](https://github.com/dexmach/WAPTenantPublicAPI) 
 
 <!-- ARCHIVE END -->
+
 
 
 
