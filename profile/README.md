@@ -1,7 +1,7 @@
 # 🤟 Welcome, we are DexMach!
 
 <p align="center">
-    <img src="https://www.dexmach.com/wp-content/uploads/2020/08/DEXMACH-Logo-CMYK-icon.png" width="150px"/>
+    <img src="https://www.dexmach.com/wp-content/uploads/2022/06/cropped-DexMach_a_cegeka_company_icon_RGB-HighRes.png" width="150px"/>
 </p>
 
 At Dexmach we have the purpose to evangelize our vision and cloud strategy to organizations. 
