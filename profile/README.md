@@ -28,9 +28,11 @@ No public OSS repositories to list yet 😉
 
 <!-- AIW START -->
 
+- [AIW-DevOps-with-GitHub-V2](https://github.com/dexmach/AIW-DevOps-with-GitHub-V2) 
 - [AIW-Hybrid-cloud-solutions](https://github.com/dexmach/AIW-Hybrid-cloud-solutions) 
 - [AIW-WVD-Immersion](https://github.com/dexmach/AIW-WVD-Immersion) 
 - [AVW-Cloud-Adoption-Framework](https://github.com/dexmach/AVW-Cloud-Adoption-Framework) 
+- [CodeToCloud-Student](https://github.com/dexmach/CodeToCloud-Student) 
 - [MCW-Cloud-native-applications](https://github.com/dexmach/MCW-Cloud-native-applications) 
 
 <!-- AIW END -->
@@ -47,6 +49,7 @@ No public OSS repositories to list yet 😉
 - [WAPTenantPublicAPI](https://github.com/dexmach/WAPTenantPublicAPI) 
 
 <!-- ARCHIVE END -->
+
 
 
 
