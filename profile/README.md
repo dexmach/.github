@@ -34,6 +34,7 @@ No public OSS repositories to list yet 😉
 - [AVW-Cloud-Adoption-Framework](https://github.com/dexmach/AVW-Cloud-Adoption-Framework) 
 - [CodeToCloud-Student](https://github.com/dexmach/CodeToCloud-Student) 
 - [MCW-Cloud-native-applications](https://github.com/dexmach/MCW-Cloud-native-applications) 
+- [WhatTheHack](https://github.com/dexmach/WhatTheHack) 
 
 <!-- AIW END -->
 
@@ -49,6 +50,7 @@ No public OSS repositories to list yet 😉
 - [WAPTenantPublicAPI](https://github.com/dexmach/WAPTenantPublicAPI) 
 
 <!-- ARCHIVE END -->
+
 
 
 
