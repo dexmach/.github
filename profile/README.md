@@ -24,34 +24,6 @@ No public OSS repositories to list yet 😉
 
 <!-- OSS END -->
 
-### Immersion workshops
-
-<!-- AIW START -->
-
-- [AIW-DevOps-with-GitHub-V2](https://github.com/dexmach/AIW-DevOps-with-GitHub-V2) 
-- [AIW-Hybrid-cloud-solutions](https://github.com/dexmach/AIW-Hybrid-cloud-solutions) 
-- [AIW-WVD-Immersion](https://github.com/dexmach/AIW-WVD-Immersion) 
-- [AVW-Cloud-Adoption-Framework](https://github.com/dexmach/AVW-Cloud-Adoption-Framework) 
-- [MCW-Cloud-native-applications](https://github.com/dexmach/MCW-Cloud-native-applications) 
-
-<!-- AIW END -->
-
-### Archived
-
-<!-- ARCHIVE START -->
-
-- [blog](https://github.com/dexmach/blog) 
-- [CodeToCloud-Student](https://github.com/dexmach/CodeToCloud-Student) 
-- [Community](https://github.com/dexmach/Community) 
-- [DemoProject](https://github.com/dexmach/DemoProject) 
-- [SMBblueprint-ARM](https://github.com/dexmach/SMBblueprint-ARM) 
-- [SMBblueprint-Docs](https://github.com/dexmach/SMBblueprint-Docs) 
-- [SMBblueprint-PowerShell](https://github.com/dexmach/SMBblueprint-PowerShell) 
-- [VMRoles](https://github.com/dexmach/VMRoles) 
-- [WAPTenantPublicAPI](https://github.com/dexmach/WAPTenantPublicAPI) 
-
-<!-- ARCHIVE END -->
-
 
 
 
